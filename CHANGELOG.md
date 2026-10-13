@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.3.0 – 2026-10-13
+
+- **Design with AI (F7)**: describe a label in plain language and an OpenRouter model lays it out, or
+  changes the open label. Preview and refine before applying; applying is one undo step. API key stored
+  encrypted (Windows DPAPI); any OpenRouter model can be used.
+- Image properties: **Choose image…** sets or replaces the picture of an image element.
+- Label files tolerate numbers written as strings.
+
 ## 1.2.0 – 2026-10-11
 
 First public release.
