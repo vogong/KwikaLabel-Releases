@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.4.0 – 2026-10-14
+
+- **Millimetres or inches**: choose the unit on the toolbar (mm | in), in *View → Units* or in Document
+  settings. All sizes, positions, offsets, captions, the status bar and printer messages follow it. Any
+  length box also accepts the other unit as you type it: `2in`, `1/2"`, `4 1/4`, `50mm` or `5cm`.
+  Labels are still stored in millimetres, so existing files open unchanged.
+- **Alignment overlay (F8, or hold O)**: draws the die-cut outline, the rounded corners and the grid
+  transparently on top of the artwork, and shades the corner areas that the die-cut will trim, so
+  you can see whether square-cornered images line up. Toggle it with the toolbar *Overlay* button or
+  F8, or hold **O** to show it only while the key is down.
+- Major grid lines are every 10 mm, or every 1 inch when working in inches.
+- Arrow-key nudge and mouse-wheel steps follow the chosen unit.
+- Install instructions explain the Windows SmartScreen warning for the unsigned installer.
+
 ## 1.3.0 – 2026-10-13
 
 - **Design with AI (F7)**: describe a label in plain language and an OpenRouter model lays it out, or
