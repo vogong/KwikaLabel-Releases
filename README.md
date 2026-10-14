@@ -44,8 +44,33 @@
 3. Start **KwikaLabel** from the Start menu. A sample label is installed in
    `C:\Program Files\Kwika\KwikaLabel\Samples`.
 
-> **Windows SmartScreen** may show "Windows protected your PC" for new downloads.
-> Click **More info → Run anyway** to continue.
+### "Windows protected your PC"
+
+KwikaLabel is free, and the installer is not code-signed – a signing certificate costs more each year
+than a free app can justify. Because of that, Windows SmartScreen shows a blue warning the first time
+you run the installer:
+
+> **Windows protected your PC**
+> Microsoft Defender SmartScreen prevented an unrecognized app from starting.
+
+This is expected and does not mean anything is wrong with the file. To continue:
+
+1. Click **More info** (the small link under the message).
+2. Check that the app name is **KwikaLabel-&lt;version&gt;-Setup.exe** and the publisher shows *Unknown publisher*.
+3. Click **Run anyway**.
+
+Your browser may also say the file "isn't commonly downloaded". In Edge choose **⋯ → Keep → Show more → Keep anyway**;
+in Chrome choose **Keep**.
+
+**Want to be sure the download is genuine?** Only download KwikaLabel from this page. Each release also
+lists a `.sha256` file. To compare it, open PowerShell in your Downloads folder and run:
+
+```powershell
+Get-FileHash .\KwikaLabel-<version>-Setup.exe -Algorithm SHA256
+```
+
+The hash shown must match the one in the `.sha256` file (letter case doesn't matter). If it doesn't,
+delete the file and contact support@kwika.ca.
 
 **Upgrading:** run the new Setup.exe – it replaces the previous version and keeps your labels.
 **Uninstalling:** *Settings → Apps → KwikaLabel → Uninstall*. Your label files are never removed.
