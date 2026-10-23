@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.0 – 2026-10-15
+
+- Minor improvements and bug fixes.
+
 ## 1.4.0 – 2026-10-14
 
 - **Millimetres or inches**: choose the unit on the toolbar (mm | in), in *View → Units* or in Document
